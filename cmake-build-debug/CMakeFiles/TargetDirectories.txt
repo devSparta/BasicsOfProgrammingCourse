@@ -1,0 +1,4 @@
+C:/Users/nikbu/CLionProjects/libs/cmake-build-debug/CMakeFiles/libs.dir
+C:/Users/nikbu/CLionProjects/libs/cmake-build-debug/CMakeFiles/dataStructures.dir
+C:/Users/nikbu/CLionProjects/libs/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/nikbu/CLionProjects/libs/cmake-build-debug/CMakeFiles/rebuild_cache.dir
