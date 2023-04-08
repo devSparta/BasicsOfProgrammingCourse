@@ -94,6 +94,12 @@ build CMakeFiles/dataStructures.dir/dataStructures/vector/vector.c.obj: C_COMPIL
   OBJECT_DIR = CMakeFiles\dataStructures.dir
   OBJECT_FILE_DIR = CMakeFiles\dataStructures.dir\dataStructures\vector
 
+build CMakeFiles/dataStructures.dir/dataStructures/vectorVoid/vectorVoid.c.obj: C_COMPILER__dataStructures_Debug C$:/Users/nikbu/CLionProjects/libs/dataStructures/vectorVoid/vectorVoid.c || cmake_object_order_depends_target_dataStructures
+  DEP_FILE = CMakeFiles\dataStructures.dir\dataStructures\vectorVoid\vectorVoid.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles\dataStructures.dir
+  OBJECT_FILE_DIR = CMakeFiles\dataStructures.dir\dataStructures\vectorVoid
+
 
 # =============================================================================
 # Link build statements for STATIC_LIBRARY target dataStructures
@@ -102,7 +108,7 @@ build CMakeFiles/dataStructures.dir/dataStructures/vector/vector.c.obj: C_COMPIL
 #############################################
 # Link the static library libdataStructures.a
 
-build libdataStructures.a: C_STATIC_LIBRARY_LINKER__dataStructures_Debug CMakeFiles/dataStructures.dir/dataStructures/vector/vector.c.obj
+build libdataStructures.a: C_STATIC_LIBRARY_LINKER__dataStructures_Debug CMakeFiles/dataStructures.dir/dataStructures/vector/vector.c.obj CMakeFiles/dataStructures.dir/dataStructures/vectorVoid/vectorVoid.c.obj
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = CMakeFiles\dataStructures.dir
   POST_BUILD = cd .
