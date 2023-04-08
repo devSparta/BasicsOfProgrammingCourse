@@ -9,7 +9,7 @@ void test_pushBack_emptyVector() {
     pushBack(&v, 8);
 
     assert(v.size == 3 && v.capacity == 3 && v.data[0] == 2 && v.data[1] == 3
-    && v.data[2] == 8);
+           && v.data[2] == 8);
 }
 
 void test_pushBack_fullVector() {
