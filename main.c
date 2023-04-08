@@ -66,7 +66,7 @@ void test_front_oneElementInVector() {
     assert(front(&v) == &v.data[0]);
 }
 
-void test() {
+void test_vector() {
     test_pushBack_emptyVector();
     test_pushBack_fullVector();
     test_popBack_notEmptyVector();
@@ -75,37 +75,36 @@ void test() {
     test_front_oneElementInVector();
 }
 
+void test_getVectorValueV() {
+    vectorVoid v = createVectorV(2, sizeof(int));
+    int a = 1;
+    pushBackV(&v, &a);
+    int x;
+    getVectorValueV(&v, 0, &x);
+    assert(x == 1);
+}
+
+void test_setVectorValueV() {
+    vectorVoid v = createVectorV(2, sizeof(int));
+    int a = 1;
+    pushBackV(&v, &a);
+    int x = 2;
+    setVectorValueV(&v, 0, &x);
+
+    int res;
+    getVectorValueV(&v, 0, &res);
+
+    assert(res == 2);
+}
+
+void test_vectorVoid() {
+    test_getVectorValueV();
+    test_setVectorValueV();
+}
+
 int main() {
-    //test();
-
-//    size_t n;
-//    scanf("%zd", &n);
-//    vectorVoid v = createVectorV(0, sizeof(int));
-//    for (int i = 0; i < n; i++) {
-//        int x;
-//        scanf("%d", &x);
-//        pushBackV(&v, &x);
-//    }
-//    for (int i = 0; i < n; i++) {
-//        int x;
-//        getVectorValueV(&v, i, &x);
-//        printf("%d ", x);
-//    }
-
-    size_t n;
-    scanf("%zd", &n);
-    vectorVoid v = createVectorV(0, sizeof(float));
-    for (int i = 0; i < n; i++) {
-        float x;
-        scanf("%f", &x);
-        pushBackV(&v, &x);
-    }
-    for (int i = 0; i < n; i++) {
-        float x;
-        getVectorValueV(&v, i, &x);
-        printf("%f ", x);
-    }
-
+    test_vector();
+    test_vectorVoid();
 
     return 0;
 }
