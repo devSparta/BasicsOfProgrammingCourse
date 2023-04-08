@@ -61,6 +61,12 @@ build CMakeFiles/libs.dir/dataStructures/vector/vector.c.obj: C_COMPILER__libs_D
   OBJECT_DIR = CMakeFiles\libs.dir
   OBJECT_FILE_DIR = CMakeFiles\libs.dir\dataStructures\vector
 
+build CMakeFiles/libs.dir/dataStructures/vectorVoid/vectorVoid.c.obj: C_COMPILER__libs_Debug C$:/Users/nikbu/CLionProjects/libs/dataStructures/vectorVoid/vectorVoid.c || cmake_object_order_depends_target_libs
+  DEP_FILE = CMakeFiles\libs.dir\dataStructures\vectorVoid\vectorVoid.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles\libs.dir
+  OBJECT_FILE_DIR = CMakeFiles\libs.dir\dataStructures\vectorVoid
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target libs
@@ -69,7 +75,7 @@ build CMakeFiles/libs.dir/dataStructures/vector/vector.c.obj: C_COMPILER__libs_D
 #############################################
 # Link the executable libs.exe
 
-build libs.exe: C_EXECUTABLE_LINKER__libs_Debug CMakeFiles/libs.dir/main.c.obj CMakeFiles/libs.dir/dataStructures/vector/vector.c.obj
+build libs.exe: C_EXECUTABLE_LINKER__libs_Debug CMakeFiles/libs.dir/main.c.obj CMakeFiles/libs.dir/dataStructures/vector/vector.c.obj CMakeFiles/libs.dir/dataStructures/vectorVoid/vectorVoid.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\libs.dir
